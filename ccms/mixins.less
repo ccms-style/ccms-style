@@ -1,0 +1,41 @@
+// clear fix
+.clear-fix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+// opacity ie: @number=50
+.opacity(@number){
+  filter: alpha(opacity=@number);
+  -moz-opacity: @number/100;
+  opacity: @number/100;
+}
+
+// linear gradient
+.linear-gradient(@angel, @startColor, @endColor){
+  background-color: @endColor;
+  background-image: -webkit-linear-gradient(@angel, @startColor, @endColor);
+  background-image: -moz-linear-gradient(@angel, @startColor, @endColor);
+  background-image: -o-linear-gradient(@angel, @startColor, @endColor);
+  background-image: -ms-linear-gradient(@angel, @startColor, @endColor);
+  background-image: -ms-linear-gradient(@angel, @startColor 0%, @endColor 100%);
+  background-image: -chrome-linear-gradient(@angel, @startColor, @endColor);
+  background-image: linear-gradient(@angel, @startColor, @endColor);
+  & when (@angel = "top"){
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="@{startColor}", endColorstr="@{endColor}",GradientType=0);
+  }
+  & {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="@{startColor}", endColorstr="@{endColor}",GradientType=1);
+  }
+}
+
+
