@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>ccms-style</title>
-    <script src="js/angular.js"></script>
+    <script src="js/lib/angular.js"></script>
     <script src="route.js"></script>
     <script src="/controller/mainCtr.js"></script>
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet/less" href="ccms/ccms.less" />
     <link rel="stylesheet/less" href="css/main.less" />
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/html5.js"></script>
-    <script src="js/less-1.7.0.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/html5.js"></script>
+    <script src="js/lib/less-1.7.0.min.js"></script>
 </head>
 <body data-target=".bs-docs-sidebar" data-spy="scroll">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <ul class="nav">
-            <li class="active"><a href="./index.html">Home</a></li>
+            <li class="active"><a href="#/home">Home</a></li>
         </ul>
     </div>
     <header class="jumbotron subhead">
@@ -27,16 +27,5 @@
     </header>
 
     <div class="container" ng-view></div>
-    <script>
-        $(".bs-docs-sidebar").scrollspy();
-        $("a").focus(function(){$(this).blur();});
-        $(window).scroll(function(){
-            if(document.documentElement.scrollTop > 120){
-                $(".bs-docs-sidenav").removeClass("affix-top").addClass("affix").css({"top": "70px"});
-            }else{
-                $(".bs-docs-sidenav").removeClass("affix").addClass("affix-top");
-            }
-        });
-    </script>
 </body>
 </html>
