@@ -1,7 +1,18 @@
-*{
+// default style for all element in body
+body{
   font-family: @font-family-default;
-  font-size: @font-size-default;
-  color: @font-color-default;
+  font-size: @font-size-content;
+  color: @font-color-content;
   box-sizing: @box-sizing-default;
-  :root .gradient{filter:none;}
 }
+// style for hyperlink
+a, a:link, a:visited, a:active{
+  color: @link-default-color;
+}
+a:hover{
+  color: @link-hover-color;
+}
+// style for special text
+.text-price{color: @price-font-color;}
+.text-emphasize{color: @emphasize-font-color;}
+.text-warning{color: @warning-font-color;}

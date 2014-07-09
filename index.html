@@ -13,7 +13,7 @@
 <body data-target=".bs-docs-sidebar" data-spy="scroll">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <ul class="nav">
-            <li class="active"><a href="#/home">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
         </ul>
     </div>
     <header class="jumbotron subhead">
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-sm-3 bs-docs-sidebar">
                 <ul class="nav nav-list bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="70">
-                    <li class="active"><a href="#overview">Overview<i class="icon-chevron-right"></i></a></li>
+                    <li class="active"><a href="#overview">概述<i class="icon-chevron-right"></i></a></li>
                     <li><a href="#global-variable">全局变量<i class="icon-chevron-right"></i></a></li>
                     <li><a href="#mixins">Mixins<i class="icon-chevron-right"></i></a></li>
                 </ul>
@@ -32,32 +32,141 @@
             <div class="col-sm-9">
                 <section id="overview">
                     <div class="page-header">
-                        <h1>Overview</h1>
+                        <h1>概述</h1>
                     </div>
-                    <pre class="prettyprint linenums html-line" lang="html" data-doc='
-                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-                    <section id="mixins">
-                        <div class="page-header">
-                            <h1>Mixins</h1>
-                        </div>
-                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    </section>
-                    '>
-                    </pre>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <h3>项目目标</h3>
+                    <p>为数据赢家定制css样式库，规范css样式，集中开发管理公用样式，使开发人员能够更为方便快捷的开发页面。</p>
+                    <h3 class="text-emphasize">开发须知</h3>
+                    <p  class="text-emphasize">为了快捷开发，本文档引入bootstrap样式库，因此在文档中开发样式时请注意是否受到bootstrap样式的影响。</p>
+                    <h3>文档相关样式</h3>
+                    <p>文本样式请参照如下代码开发：</p>
+<pre class="prettyprint linenums html-line" data-doc='
+<div class="page-header">
+    <h1>概述</h1>
+</div>
+<h3>项目目标</h3>
+<p>为数据赢家定制css样式库，规范css样式，集中开发管理公用样式，使开发人员能够更为方便快捷的开发页面。</p>
+'>
+</pre>
+                    <p>项目引入Google Code Prettify来高亮代码显示，html代码请参照如下代码开发。</p>
+<pre class="prettyprint linenums html-line" data-doc='
+<pre class="prettyprint linenums html-line" lang="html" data-doc="
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <section id="global-variable">
+        <div class="page-header">
+            <h1>全局变量</h1>
+        </div>
+    </section>
+">
+</pre>
+'>
+</pre>
                 </section>
                 <section id="global-variable">
                     <div class="page-header">
                         <h1>全局变量</h1>
                     </div>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <h3>开发须知</h3>
+                    <p>所有全局变量请定义在ccms/global-varialbe.less文件下。</p>
+                    <h3>已定义全局变量</h3>
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th width="300px">全局变量名称</th>
+                            <th width="300px">当前值</th>
+                            <th>全局变量描述</th>
+                        </tr>
+                        <tr>
+                            <td>@font-family-default</td>
+                            <td>Tahoma, '微软雅黑'</td>
+                            <td>默认字体</td>
+                        </tr>
+                        <tr>
+                            <td>@font-size-title</td>
+                            <td>18px</td>
+                            <td>标题字体大小</td>
+                        </tr>
+                        <tr>
+                            <td>@font-color-color</td>
+                            <td>#2d2d2d</td>
+                            <td>标题字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@font-size-tab</td>
+                            <td>13px</td>
+                            <td>tab字体大小</td>
+                        </tr>
+                        <tr>
+                            <td>@font-color-tab</td>
+                            <td>#3d3d3d</td>
+                            <td>tab字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@font-size-content</td>
+                            <td>12px</td>
+                            <td>内容字体大小</td>
+                        </tr>
+                        <tr>
+                            <td>@font-color-content</td>
+                            <td>#3d3d3d</td>
+                            <td>内容字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@link-default-color</td>
+                            <td>#0083ba</td>
+                            <td>链接字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@link-hover-color</td>
+                            <td>#00aaf1</td>
+                            <td>链接鼠标悬浮时字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@price-font-color</td>
+                            <td>#ff7815</td>
+                            <td>价格字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@emphasize-font-color</td>
+                            <td>#ff5500</td>
+                            <td>强调字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@warning-font-color</td>
+                            <td>#ff0000</td>
+                            <td>警告字体颜色</td>
+                        </tr>
+                        <tr>
+                            <td>@box-sizing-default</td>
+                            <td>border-box</td>
+                            <td>默认盒模式</td>
+                        </tr>
+                    </table>
                 </section>
                 <section id="mixins">
                     <div class="page-header">
                         <h1>Mixins</h1>
                     </div>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <h3>开发须知</h3>
+                    <p>所有Mixins请定义到ccms/mixins.less文件中。</p>
+                    <h3>已定义的Mixins</h3>
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th width="300px">Mixins名称</th>
+                            <th>Mixins描述</th>
+                        </tr>
+                        <tr>
+                            <td>.clear-fix</td>
+                            <td>清除浮动</td>
+                        </tr>
+                        <tr>
+                            <td>.opacity(@number)</td>
+                            <td>透明样式。参数@number为整数，例如 @number=50。</td>
+                        </tr>
+                        <tr>
+                            <td>.linear-gradient(@angel, @startColor, @endColor)</td>
+                            <td>线性渐变。参数：@angel 渐变角度，可以为top、left或者45deg。</td>
+                        </tr>
+                    </table>
                 </section>
             </div>
         </div>
@@ -69,9 +178,5 @@
     <script src="js/lib/less-1.7.0.min.js"></script>
     <link href="js/lib/google-code-prettify/prettify.css" rel="stylesheet" />
     <script src="js/lib/google-code-prettify/prettify.js"></script>
-    <script>//<![CDATA[
-        function html(s) {return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');}
-        $('.html-line').html(html($('.html-line').attr("data-doc")));
-        prettyPrint();
-    //]]></script>
+    <script src="js/html-code-prettfier.js"></script>
 </html>
