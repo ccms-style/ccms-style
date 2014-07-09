@@ -34,7 +34,17 @@
                     <div class="page-header">
                         <h1>Overview</h1>
                     </div>
-
+                    <pre class="prettyprint linenums html-line" lang="html" data-doc='
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                    <section id="mixins">
+                        <div class="page-header">
+                            <h1>Mixins</h1>
+                        </div>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    </section>
+                    '>
+                    </pre>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </section>
                 <section id="global-variable">
@@ -57,4 +67,11 @@
     <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/lib/html5.js"></script>
     <script src="js/lib/less-1.7.0.min.js"></script>
+    <link href="js/lib/google-code-prettify/prettify.css" rel="stylesheet" />
+    <script src="js/lib/google-code-prettify/prettify.js"></script>
+    <script>//<![CDATA[
+        function html(s) {return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');}
+        $('.html-line').html(html($('.html-line').attr("data-doc")));
+        prettyPrint();
+    //]]></script>
 </html>
