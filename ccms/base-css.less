@@ -16,3 +16,17 @@ a:hover{
 .text-price{color: @price-font-color;}
 .text-emphasize{color: @emphasize-font-color;}
 .text-warning{color: @warning-font-color;}
+
+// 布局相关
+@sidebar-width: 150px;
+@maincontainer-margin: 20px;
+.maincontainer{
+  position: absolute;
+  top: @maincontainer-margin;
+  right: @maincontainer-margin;
+  bottom: @maincontainer-margin;
+  left: @maincontainer-margin + @sidebar-width;
+  overflow: hidden;
+  margin-left: 0;         //  为覆盖comm_css.css文件样式,最后应删除
+  padding: 0;             //  为覆盖comm_css.css文件样式,最后应删除
+}

@@ -1,8 +1,5 @@
 @import (once) "../ccms/mixins.less";
 body{font-size:15px;padding-top: 49px; position: relative;}
-p{
-  text-indent: 25px;
-}
 h1{
   color: #5a5a5a;
 }
@@ -12,7 +9,7 @@ h3{
 .navbar-fixed-top{
   .nav{height: 30px; margin-left: 40px;}
   .nav > li > a{color: #999;  line-height: 30px; &:hover, &:focus{background-color: transparent; color: #fff;}}
-  .nav > li.active > a{color: #fff;}
+  .nav > li.active > a{color: #fff; background-color: transparent;}
 }
 
 .jumbotron{
@@ -23,7 +20,10 @@ h3{
   }
   h2{color: #fff;padding-left: 50px;}
 }
-.container{width: 100%;}
+.container{
+  width: 100%;
+  img{border: 1px solid #ddd; box-shadow: 2px 2px 10px #ccc};
+}
 section{padding-top: 30px;}
 
 .bs-docs-sidebar{
@@ -54,7 +54,7 @@ section{padding-top: 30px;}
 
     li > a{
       .icon-chevron-right{
-        background: url("../img/glyphicons-halflings.png") no-repeat -456px -72px;
+        background: url("../img/icons/glyphicons-halflings.png") no-repeat -456px -72px;
         width: 14px; height: 14px;line-height: 14px; display: inline-block; .opacity(40);
         float: right;
       }
@@ -64,10 +64,8 @@ section{padding-top: 30px;}
       &:hover{background-color: transparent;}
       color: #fff;
       .icon-chevron-right {
-        background: url("../img/glyphicons-halflings-white.png") no-repeat -456px -72px;.opacity(100);
+        background: url("../img/icons/glyphicons-halflings-white.png") no-repeat -456px -72px;.opacity(100);
       }
     }
-
-
   }
 }
