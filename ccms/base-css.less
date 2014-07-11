@@ -12,8 +12,10 @@ a, a:link, a:visited, a:active{
 a:hover{
   color: @link-hover-color;
 }
+// font for number
+.text-number{font-family: @font-family-number;}
 // style for special text
-.text-price{color: @price-font-color;}
+.text-price{color: @price-font-color; &:extend(.text-number);}
 .text-emphasize{color: @emphasize-font-color;}
 .text-warning{color: @warning-font-color;}
 

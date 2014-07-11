@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>CCMS Style - Base CSS</title>
+    <title>数据赢家UI规范样式库 - 基础样式</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet/less" href="ccms/ccms.less" />
@@ -19,7 +19,7 @@
     </ul>
 </div>
 <header class="jumbotron subhead">
-    <h2>CCMS CSS Framework</h2>
+    <h2>数据赢家UI规范样式库</h2>
 </header>
 
 <div class="container">
@@ -41,8 +41,7 @@
                 <p>主要内容容器开发参照如下代码：</p>
 <pre class="prettyprint linenums html-line" data-doc='
 <div class="maincontainer"></div>
-'>
-</pre>
+'></pre>
                 <p>已经按照UI规范设计稿将外边距统一设置为20px; 开发时请不要添加额外的边距。</p>
             </section>
             <section id="font">
@@ -55,17 +54,23 @@
                 </div>
 <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <span class="title-font-style">标题字体样式</span>
-'>
-</pre>
+'></pre>
                 <p>字体为Tahoma和微软雅黑，字体及内容字体大小和颜色已在body样式中定义，body中所有元素都将继承这些样式；Tab的字体样式将在Tab控件样式中定义。</p>
+                <h3>数字字体样式</h3>
+                <div class="bs-docs-example">
+                    <span class="text-number">1234567890</span>
+                </div>
+<pre class="prettyprint linenums code-with-example html-line" data-doc='
+<span class="text-number">1234567890</span>
+'></pre>
+                <p>根据UI规范文档数字字体为Tahoma，请自行为数字添加class="text-number"。价格字体样式已添加该样式，不需要添加这个class。</p>
                 <h3>超链接字体样式</h3>
                 <div class="bs-docs-example">
                     <a href="javascript:void(0);">超链接字体样式</a>
                 </div>
 <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <a href="javascript:void(0);">超链接字体样式</a>
-'>
-</pre>
+'></pre>
                 <h3>特殊内容字体样式</h3>
                 <div class="bs-docs-example">
                     <div class="text-price">价格 #ff7815</div>
@@ -89,8 +94,7 @@
                 </div>
 <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <span class="title-with-prefix-icon">营销活动</span>
-'>
-</pre>
+'></pre>
                 <p>已经按照UI规范设计稿为改标题添加16px右侧外边距; 开发时请不要添加额外的边距。</p>
             </section>
         </div>
@@ -103,5 +107,5 @@
 <script src="js/lib/less-1.7.0.min.js"></script>
 <link href="js/lib/google-code-prettify/prettify.css" rel="stylesheet" />
 <script src="js/lib/google-code-prettify/prettify.js"></script>
-<script src="js/html-code-prettfier.js"></script>
+<script src="js/html-code-prettify.js"></script>
 </html>

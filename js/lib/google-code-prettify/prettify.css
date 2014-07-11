@@ -34,7 +34,7 @@
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint { padding: 2px; border: 1px solid #ddd; box-shadow: 2px 2px 5px #eee; }
 pre.prettyprint li{line-height: 25px;}
-pre.code-with-example{margin-top: -17px;}
+pre.code-with-example{margin-top: -17px; border-top-left-radius: 0; border-top-right-radius: 0;}
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
 /* Alternate shading for lines */
