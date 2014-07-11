@@ -13,8 +13,9 @@
 <body data-target=".bs-docs-sidebar" data-spy="scroll">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <ul class="nav nav-pills">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="base-css.html">Base CSS</a></li>
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="base-css.html">基本样式</a></li>
+            <li><a href="component.html">控件</a></li>
         </ul>
     </div>
     <header class="jumbotron subhead">
@@ -49,6 +50,7 @@
 <p>为数据赢家定制css样式库，规范css样式，集中开发管理公用样式，使开发人员能够更为方便快捷的开发页面。</p>
 '>
 </pre>
+                    <br/>
                     <p>2.项目引入Google Code Prettify来高亮代码显示，html代码请参照如下代码开发。</p>
 <pre class="prettyprint linenums html-line" data-doc='
 <pre class="prettyprint linenums html-line" lang="html" data-doc="
@@ -62,14 +64,34 @@
 </pre>
 '>
 </pre>
+                    <br/>
                     <p>3.示例框开发</p>
                     <div class="bs-docs-example">
                         <span class="title-with-prefix-icon">营销活动</span>
                     </div>
-<pre class="prettyprint linenums html-line" data-doc='
+<pre class="prettyprint linenums code-with-example html-line" data-doc='
 <div class="bs-docs-example">
     <span class="title-with-prefix-icon">营销活动</span>
 </div>
+'>
+</pre>
+                    <br/>
+                    <p>4.为减少代码量请多使用Extend,不要简单将已有样式当做Mixin包含的新的样式中。</p>
+<pre class="prettyprint linenums">
+.title-font-style{
+  font-size: @font-size-title;
+  color: @font-color-title;
+}
+
+.title-with-prefix-icon{
+  &:extend(.title-font-style);
+  ...
+}
+</pre>
+                    <br/>
+                    <p>5.示例框与代码框合并,请在代码框中添加class="code-with-example"</p>
+<pre class="prettyprint linenums html-line" data-doc='
+<pre class="prettyprint linenums code-with-example html-line"...
 '>
 </pre>
                 </section>
@@ -82,9 +104,14 @@
                     <h3>已定义全局变量</h3>
                     <table class="table table-bordered table-hover">
                         <tr>
-                            <th width="300px">全局变量名称</th>
-                            <th width="300px">当前值</th>
+                            <th width="250px">全局变量名称</th>
+                            <th width="200px">当前值</th>
                             <th>全局变量描述</th>
+                        </tr>
+                        <tr>
+                            <td>@img-url</td>
+                            <td>'img/'</td>
+                            <td>背景图路径，方便项目迁移时改变所有背景图片的路径。</td>
                         </tr>
                         <tr>
                             <td>@font-family-default</td>
