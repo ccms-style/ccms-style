@@ -4,10 +4,6 @@
   font-size: @font-size-tab;
   padding:0;
   li{
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
     background-color: @tab-hover-background-color;
     border-color: @tab-border-color @tab-border-color @tab-border-hover-color;
     border-image: none;
@@ -37,10 +33,6 @@
     }
   }
   .hover{
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
     background-color: #fff;
     border-color: @tab-border-hover-color @tab-border-hover-color transparent;
     border-image: none;
@@ -78,5 +70,83 @@
     border-left: @tab-btn-border;
     border-right: @tab-btn-border;
     padding: 10px 30px;
+  }
+}
+
+// pagination
+.pDiv {
+  .linear-gradient(top, @pagination-linear-color-start, @pagination-linear-color-end);
+  border: @pagination-border;
+  color: @pagination-font-color;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  .pDiv2 {
+    float: right;
+    margin: 5px 3px 3px;
+  }
+  .pGroup {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px;
+    font-size: @font-size-content;
+  }
+  .pButton {
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    width: 20px;
+    background: url("@{img-url}/pagination-icon.png") no-repeat scroll;
+    span {
+      display: block;
+      float: left;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .pcontrol {
+    overflow: visible;
+    position: relative;
+    input {
+      background-color: #fffffb;
+      border: 1px solid #d9d9d9;
+      height: 20px;
+      line-height: 20px;
+      padding: 2px;
+      position: relative;
+      text-align: center;
+      width: 39px;
+    }
+  }
+  .pReload {
+    background-position: 0 -78px;
+  }
+  .pFirst {
+    background-position: 0 1px;
+    &:hover{
+      background-position: -20px 1px;
+    }
+  }
+  .pPrev {
+    background-position: 0 -18px;
+    &:hover{
+      background-position: -20px -18px;
+    }
+  }
+  .pNext {
+    background-position: 0 -38px;
+    &:hover{
+      background-position: -20px -38px;
+    }
+  }
+  .pLast {
+    background-position: 0 -58px;
+    &:hover{
+      background-position: -20px -58px;
+    }
   }
 }
