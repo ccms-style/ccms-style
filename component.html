@@ -36,13 +36,13 @@
                 </div>
                 <h3>开发须知</h3>
                 <p>所有控件样式请定义到component.less文件中，Tab需要的js方法请定义到ccms/js/tab.js文件中。</p>
-                <h3>基本样式</h3>
+                <h3>样式一</h3>
                 <div class="bs-docs-example">
                     <ul class="tab-title clear-fix">
                         <li class="hover">活动列表</li>
                         <li>短信活动<a href="javascript:void(0);" class="tab-close"></a></li>
                         <li title="超长的Tab标题被忽略">超长的Tab标题被忽略</li>
-                        <li style="max-width: 240px;">可重新定义max-width加大宽度</li>
+                        <li style="max-width: 250px;">可重新定义max-width加大宽度</li>
                     </ul>
                 </div>
 <pre class="prettyprint linenums code-with-example html-line" data-doc='
@@ -50,11 +50,27 @@
     <li class="hover">活动列表</li>
     <li>短信活动<a href="javascript:void(0);" class="tab-close"></a></li>
     <li title="超长的Tab标题文字会被忽略">超长的Tab标题文字会被忽略</li>
-    <li style="max-width: 240px;">可重新定义max-width加大宽度</li>
+    <li style="max-width: 250px;">可重新定义max-width加大宽度</li>
 </ul>
 '>
 </pre>
                 <p>添加关闭按钮仅需要在相应的<code>&lt;li&gt;</code>中添加<code>&lt;a href="javascript:void(0);" class="tab-close"&gt;&lt;/a&gt;</code>即可。tab.js文件中已定义tab项点击切换样式，如需使用请加载tab.js文件。</p>
+
+                <h3>样式二</h3>
+                <div class="bs-docs-example">
+                    <ul class="tab-btn-title clear-fix">
+                        <li class="hover">效果报告</li>
+                        <li>特征分析</li>
+                    </ul>
+                </div>
+<pre class="prettyprint linenums code-with-example html-line" data-doc='
+<ul class="tab-btn-title clear-fix">
+    <li class="hover">效果报告</li>
+    <li>特征分析</li>
+</ul>
+'>
+</pre>
+                <p>tab.js文件中已定义tab项点击切换样式，如需使用请加载tab.js文件。</p>
             </section>
         </div>
     </div>

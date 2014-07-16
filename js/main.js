@@ -13,7 +13,7 @@ requirejs.config({
     }
 });
 
-requirejs(['jquery', 'less', 'html5', 'bootstrap', 'gcp'], function($){
+requirejs(['jquery', 'less', 'html5', 'bootstrap'], function($){
     $(document).ready(function(){
         require(['ccms/tab']);
         console.log("document has loaded!");

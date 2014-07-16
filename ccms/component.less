@@ -1,3 +1,4 @@
+// tab 1
 .tab-title {
   border-bottom: 1px solid @tab-border-hover-color;
   font-size: @font-size-tab;
@@ -17,9 +18,9 @@
     cursor: pointer;
     float: left;
     margin-right: 3px;
-    max-width: 110px;
+    max-width: 116px;
     overflow: hidden;
-    padding: 5px 27px;
+    padding: 5px 30px;
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -47,5 +48,35 @@
     border-width: 1px;
     color: @font-color-tab-hover;
     z-index: 1;
+  }
+}
+
+// tab 2
+.tab-btn-title{
+  border: @tab-btn-border;
+  padding: 0;
+  background-color: @tab-btn-background-color;
+  li{
+    float: left;
+    overflow: hidden;
+    padding: 10px 31px;
+    font-size: @font-size-tab;
+    color: @tab-btn-font-color;
+    cursor: pointer;
+    position: relative;
+    left: -1px;
+    &:hover{
+      padding: 10px 30px;
+      border-left: @tab-btn-border;
+      border-right: @tab-btn-border;
+      background-color: @tab-btn-hover-background-color;
+    }
+  }
+  .hover{
+    background-color: @tab-btn-active-background-color;
+    color: @tab-btn-active-font-color;
+    border-left: @tab-btn-border;
+    border-right: @tab-btn-border;
+    padding: 10px 30px;
   }
 }

@@ -1,6 +1,6 @@
-$(".tab-title li").click(function(){
+$(".tab-title li, .tab-btn-title li").click(function(){
     if(!$(this).hasClass("hover")){
-        $(".tab-title li").removeClass("hover");
+        $(this).parent("ul").find("li").removeClass("hover");
         $(this).addClass("hover");
     }
 });
