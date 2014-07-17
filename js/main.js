@@ -13,11 +13,10 @@ requirejs.config({
     }
 });
 
-requirejs(['jquery', 'less', 'html5', 'bootstrap'], function($){
-    $(document).ready(function(){
-        require(['ccms/tab']);
-        console.log("document has loaded!");
+requirejs(['jquery'], function($){
+    define(['bootstrap'], function(){
+        $('.bs-docs-sidenav').affix({offset:70}).scrollspy();
     });
-});
+})
 
-define(['app/html-code-prettify'], function(){});
+define(['less', 'html5', 'app/html-code-prettify'], function(){});
