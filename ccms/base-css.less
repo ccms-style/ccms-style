@@ -8,9 +8,11 @@ body{
 // style for hyperlink
 a, a:link, a:visited, a:active{
   color: @link-default-color;
+  text-decoration: @a-text-decoration;
 }
 a:hover{
   color: @link-hover-color;
+  text-decoration: @a-text-decoration;
 }
 // font for number
 .text-number{font-family: @font-family-number;}
@@ -46,4 +48,53 @@ a:hover{
   line-height: 25px;
   margin-right: 16px;
   text-indent: 15px;
+}
+
+// button
+// --button base
+.button{
+  line-height: @button-height;
+  text-align: @button-text-align;
+  vertical-align: @button-vertical-align;
+  border-radius: @button-radius;
+  font-size: @button-font-size;
+  color: @button-font-color;
+  width: @button-width;
+  box-shadow: @button-shadow;
+  height: @button-height;
+  display: @button-display;
+  &:hover{
+    color: @button-font-color;
+  }
+  &:active{
+    color: @button-font-color;
+  }
+  &:visited{
+    color: @button-font-color;
+  }
+}
+// ----button sure
+.button-sure{
+  .button;
+  .linear-gradient(top, @lnitial-button-sure-startColor, @lnitial-button-sure-endColor);
+  &:hover{
+    color: @button-font-color;
+    .linear-gradient(top, @hover-button-sure-startColor, @hover-button-sure-endColor);
+  }
+  &:active{
+    color: @button-font-color;
+    .linear-gradient(top, @active-button-sure-startColor, @active-button-sure-endColor);
+  }
+  .button-unclickable{
+    .linear-gradient(top, @unclickable-button-startColor, @unclickable-button-endColor);
+  }
+}
+// ----button cancel
+.button-cancel{
+  .button;
+}
+// ----button unclickable
+.button-unclickable{
+  .linear-gradient(top, @unclickable-button-startColor, @unclickable-button-endColor);
+  .button;
 }

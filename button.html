@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>数据赢家UI规范样式库 - 控件</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet/less" href="css/main.less" />
+    <script data-main="js/main" src="js/require.js"></script>
+</head>
+<body data-target=".bs-docs-sidebar" data-spy="scroll">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <ul class="nav nav-pills">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="base-css.html">基本样式</a></li>
+        <li><a href="component.html">控件</a></li>
+        <li class="active"><a href="button.html">button</a></li>
+    </ul>
+</div>
+<header class="jumbotron subhead">
+    <h2>数据赢家UI规范样式库</h2>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="70">
+                <li class="active"><a href="#tab">TAB<i class="icon-chevron-right"></i></a></li>
+                <li><a href="#font">文字样式<i class="icon-chevron-right"></i></a></li>
+                <li><a href="#title">标题<i class="icon-chevron-right"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <section id="tab">
+                <div class="page-header">
+                    <h1>TAB</h1>
+                </div>
+                <h3>开发须知</h3>
+                <p>所有控件样式请定义到component.less文件中，Tab需要的js方法请定义到ccms/js/tab.js文件中。</p>
+                <h3>基本样式</h3>
+                <div class="bs-docs-example">
+                    <ul class="tab-title clear-fix">
+                        <li class="hover">活动列表</li>
+                        <li>短信活动<a href="javascript:void(0);" class="tab-close"></a></li>
+                        <li title="超长的Tab标题被忽略">超长的Tab标题被忽略</li>
+                        <li style="max-width: 240px;">可重新定义max-width加大宽度</li>
+                    </ul>
+                </div>
+<pre class="prettyprint linenums code-with-example html-line" data-doc='
+<ul class="tab-title clear-fix">
+    <li class="hover">活动列表</li>
+    <li>短信活动<a href="javascript:void(0);" class="tab-close"></a></li>
+    <li title="超长的Tab标题文字会被忽略">超长的Tab标题文字会被忽略</li>
+    <li style="max-width: 240px;">可重新定义max-width加大宽度</li>
+</ul>
+'>
+</pre>
+                <p>添加关闭按钮仅需要在相应的<code>&lt;li&gt;</code>中添加<code>&lt;a href="javascript:void(0);" class="tab-close"&gt;&lt;/a&gt;</code>即可。tab.js文件中已定义tab项点击切换样式，如需使用请加载tab.js文件。</p>
+            </section>
+            <a class="button-sure">确定</a>
+            <a class="button-unclickable">不能点击</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -8,95 +9,107 @@
     <link rel="stylesheet/less" href="css/main.less" />
     <script data-main="js/main" src="js/require.js"></script>
 </head>
-<body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <ul class="nav nav-pills">
-        <li><a href="index.html">首页</a></li>
-        <li class="active"><a href="base-css.html">基本样式</a></li>
-        <li><a href="component.html">控件</a></li>
-    </ul>
-</div>
-<header class="jumbotron subhead">
-    <h2>数据赢家UI规范样式库</h2>
-</header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav affix-top">
-                <li class="active"><a href="#layout">页面布局<i class="icon-chevron-right"></i></a></li>
-                <li><a href="#font">文字样式<i class="icon-chevron-right"></i></a></li>
-                <li><a href="#title">标题<i class="icon-chevron-right"></i></a></li>
-            </ul>
-        </div>
-        <div class="col-sm-9">
-            <section id="layout">
-                <div class="page-header">
-                    <h1>页面布局</h1>
-                </div>
-                <h3>主要内容容器</h3>
-                <img src="img/base-css/maincontainer.jpg" /><br/><br/>
-                <p>主要内容容器开发参照如下代码：</p>
-<pre class="prettyprint linenums html-line" data-doc='
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <ul class="nav nav-pills">
+            <li><a href="index.html">首页</a>
+            </li>
+            <li class="active"><a href="base-css.html">基本样式</a>
+            </li>
+            <li><a href="component.html">控件</a>
+            </li>
+            <li class="active"><a href="button.html">button</a>
+            </li>
+        </ul>
+    </div>
+    <header class="jumbotron subhead">
+        <h2>数据赢家UI规范样式库</h2>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 bs-docs-sidebar">
+                <ul class="nav nav-list bs-docs-sidenav affix-top">
+                    <li class="active"><a href="#layout">页面布局<i class="icon-chevron-right"></i></a>
+                    </li>
+                    <li><a href="#font">文字样式<i class="icon-chevron-right"></i></a>
+                    </li>
+                    <li><a href="#title">标题<i class="icon-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <section id="layout">
+                    <div class="page-header">
+                        <h1>页面布局</h1>
+                    </div>
+                    <h3>主要内容容器</h3>
+                    <img src="img/base-css/maincontainer.jpg" />
+                    <br/>
+                    <br/>
+                    <p>主要内容容器开发参照如下代码：</p>
+                    <pre class="prettyprint linenums html-line" data-doc='
 <div class="maincontainer"></div>
 '></pre>
-                <p>已经按照UI规范设计稿将外边距统一设置为20px; 开发时请不要添加额外的边距。</p>
-            </section>
-            <section id="font">
-                <div class="page-header">
-                    <h1>文字样式</h1>
-                </div>
-                <h3>标题、Tab和内容字体样式</h3>
-                <div class="bs-docs-example">
-                    <span class="title-font-style">标题字体样式</span>
-                </div>
-<pre class="prettyprint linenums code-with-example html-line" data-doc='
+                    <p>已经按照UI规范设计稿将外边距统一设置为20px; 开发时请不要添加额外的边距。</p>
+                </section>
+                <section id="font">
+                    <div class="page-header">
+                        <h1>文字样式</h1>
+                    </div>
+                    <h3>标题、Tab和内容字体样式</h3>
+                    <div class="bs-docs-example">
+                        <span class="title-font-style">标题字体样式</span>
+                    </div>
+                    <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <span class="title-font-style">标题字体样式</span>
 '></pre>
-                <p>字体为Tahoma和微软雅黑，字体及内容字体大小和颜色已在body样式中定义，body中所有元素都将继承这些样式；Tab的字体样式将在Tab控件样式中定义。</p>
-                <h3>数字字体样式</h3>
-                <div class="bs-docs-example">
-                    <span class="text-number">1234567890</span>
-                </div>
-<pre class="prettyprint linenums code-with-example html-line" data-doc='
+                    <p>字体为Tahoma和微软雅黑，字体及内容字体大小和颜色已在body样式中定义，body中所有元素都将继承这些样式；Tab的字体样式将在Tab控件样式中定义。</p>
+                    <h3>数字字体样式</h3>
+                    <div class="bs-docs-example">
+                        <span class="text-number">1234567890</span>
+                    </div>
+                    <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <span class="text-number">1234567890</span>
 '></pre>
-                <p>根据UI规范文档数字字体为Tahoma，请自行为数字添加class="text-number"。价格字体样式已添加该样式，不需要添加这个class。</p>
-                <h3>超链接字体样式</h3>
-                <div class="bs-docs-example">
-                    <a href="javascript:void(0);">超链接字体样式</a>
-                </div>
-<pre class="prettyprint linenums code-with-example html-line" data-doc='
+                    <p>根据UI规范文档数字字体为Tahoma，请自行为数字添加class="text-number"。价格字体样式已添加该样式，不需要添加这个class。</p>
+                    <h3>超链接字体样式</h3>
+                    <div class="bs-docs-example">
+                        <a href="javascript:void(0);">超链接字体样式</a>
+                    </div>
+                    <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <a href="javascript:void(0);">超链接字体样式</a>
 '></pre>
-                <h3>特殊内容字体样式</h3>
-                <div class="bs-docs-example">
-                    <div class="text-price">价格 #ff7815</div>
-                    <div class="text-emphasize">强调 #ff5500</div>
-                    <div class="text-warning">警告 #ff0000</div>
-                </div>
-<pre class="prettyprint linenums code-with-example html-line" data-doc='
+                    <h3>特殊内容字体样式</h3>
+                    <div class="bs-docs-example">
+                        <div class="text-price">价格 #ff7815</div>
+                        <div class="text-emphasize">强调 #ff5500</div>
+                        <div class="text-warning">警告 #ff0000</div>
+                    </div>
+                    <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <div class="text-price">价格 #ff7815</div>
 <div class="text-emphasize">强调 #ff5500</div>
 <div class="text-warning">警告 #ff0000</div>
 '>
 </pre>
-            </section>
-            <section id="title">
-                <div class="page-header">
-                    <h1>标题</h1>
-                </div>
-                <h3>带开始图标的标题</h3>
-                <div class="bs-docs-example">
-                    <span class="title-with-prefix-icon">营销活动</span>
-                </div>
-<pre class="prettyprint linenums code-with-example html-line" data-doc='
+                </section>
+                <section id="title">
+                    <div class="page-header">
+                        <h1>标题</h1>
+                    </div>
+                    <h3>带开始图标的标题</h3>
+                    <div class="bs-docs-example">
+                        <span class="title-with-prefix-icon">营销活动</span>
+                    </div>
+                    <pre class="prettyprint linenums code-with-example html-line" data-doc='
 <span class="title-with-prefix-icon">营销活动</span>
 '></pre>
-                <p>已经按照UI规范设计稿为改标题添加16px右侧外边距; 开发时请不要添加额外的边距。</p>
-            </section>
+                    <p>已经按照UI规范设计稿为改标题添加16px右侧外边距; 开发时请不要添加额外的边距。</p>
+                </section>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
