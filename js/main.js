@@ -13,10 +13,8 @@ requirejs.config({
     }
 });
 
-requirejs(['jquery'], function($){
-    define(['bootstrap'], function(){
-        $('.bs-docs-sidenav').affix({offset:70}).scrollspy();
-    });
-})
-
-define(['less', 'html5', 'app/html-code-prettify'], function(){});
+define(['jquery', 'bootstrap'], function($){
+    $(".bs-docs-sidenav").affix({offset:70});
+    $('body').scrollspy({target: '.bs-docs-sidebar'});
+    require(['less', 'html5', 'app/html-code-prettify']);
+});

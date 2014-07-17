@@ -6,8 +6,9 @@
     <title>数据赢家UI规范样式库 - 首页</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet/less" href="css/main.less" />
+    <script data-main="js/main" src="js/require.js"></script>
 </head>
-<body data-target=".bs-docs-sidebar" data-spy="scroll">
+<body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <ul class="nav nav-pills">
             <li class="active"><a href="index.html">首页</a></li>
@@ -22,7 +23,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3 bs-docs-sidebar">
-                <ul class="nav nav-list bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="70">
+                <ul class="nav nav-list bs-docs-sidenav affix-top">
                     <li class="active"><a href="#overview">概述<i class="icon-chevron-right"></i></a></li>
                     <li><a href="#global-variable">全局变量<i class="icon-chevron-right"></i></a></li>
                     <li><a href="#mixins">Mixins<i class="icon-chevron-right"></i></a></li>
@@ -272,10 +273,4 @@
                             <td>线性渐变。参数：@angel 渐变角度，可以为top、left或者45deg；@startColor初始颜色；@endColor结束颜色。</td>
                         </tr>
                     </table>
-                </section>
-            </div>
-        </div>
-    </div>
-    <script data-main="js/main" src="js/require.js"></script>
-</body>
-</html>
+     
