@@ -53,16 +53,18 @@ a:hover{
 // button
 // --button base
 .button{
-  line-height: @button-height;
   text-align: @button-text-align;
   vertical-align: @button-vertical-align;
-  border-radius: @button-radius;
-  font-size: @button-font-size;
   color: @button-font-color;
+  display: @button-display;
+}
+.button-big{
   width: @button-width;
   box-shadow: @button-shadow;
   height: @button-height;
-  display: @button-display;
+  font-size: @button-font-size;
+  line-height: @button-height;
+  border-radius: @button-radius;
   &:hover{
     color: @button-font-color;
   }
@@ -76,6 +78,7 @@ a:hover{
 // ----button sure
 .button-sure{
   .button;
+  .button-big;
   .linear-gradient(top, @lnitial-button-sure-startColor, @lnitial-button-sure-endColor);
   &:hover{
     color: @button-font-color;
@@ -85,16 +88,51 @@ a:hover{
     color: @button-font-color;
     .linear-gradient(top, @active-button-sure-startColor, @active-button-sure-endColor);
   }
-  .button-unclickable{
-    .linear-gradient(top, @unclickable-button-startColor, @unclickable-button-endColor);
-  }
 }
 // ----button cancel
 .button-cancel{
   .button;
+  .button-big;
+  .linear-gradient(top, @lnitial-button-cancel-startColor, @lnitial-button-cancel-endColor);
+  &:hover{
+    color: @button-font-color;
+    .linear-gradient(top, @hover-button-cancel-startColor, @hover-button-cancel-endColor);
+  }
+  &:active{
+    color: @button-font-color;
+    .linear-gradient(top, @active-button-cancel-startColor, @active-button-cancel-endColor);
+  }
 }
 // ----button unclickable
 .button-unclickable{
-  .linear-gradient(top, @unclickable-button-startColor, @unclickable-button-endColor);
   .button;
+  .button-big;
+  .linear-gradient(top, @unclickable-button-startColor, @unclickable-button-endColor);
+}
+// --button mini
+.button-mini{
+  border: @button-mini-border;
+  font-size: @button-mini-font-size;
+  height: @button-mini-height;
+  width: @button-mini-width;
+  line-height: @button-mini-height - 4px;
+}
+.button-add{
+  .button;
+  .button-mini;
+  color: @button-add-font-color;
+  .linear-gradient(top, @lnitial-button-add-startColor, @lnitial-button-add-endColor);
+  &:hover{
+    color: @button-add-font-color;
+    .linear-gradient(top, @hover-button-add-startColor, @hover-button-add-endColor);
+  }
+  &:active{
+    color: @button-add-font-color;
+    .linear-gradient(top, @active-button-add-startColor, @active-button-add-endColor);
+  }
+  &:before{
+    content: @button-add-content;
+    font-size: @button-add-content-font-size;
+    font-weight: @button-add-content-font-weight;
+  }
 }
