@@ -116,23 +116,63 @@ a:hover{
   height: @button-mini-height;
   width: @button-mini-width;
   line-height: @button-mini-height - 4px;
+  .button;
 }
 .button-add{
-  .button;
   .button-mini;
-  color: @button-add-font-color;
+  width: @button-mini-width + 2px;
+  line-height: @button-mini-height +2px;
+  color: @button-font-color-blue;
   .linear-gradient(top, @lnitial-button-add-startColor, @lnitial-button-add-endColor);
   &:hover{
-    color: @button-add-font-color;
+    color: @button-font-color-blue;
     .linear-gradient(top, @hover-button-add-startColor, @hover-button-add-endColor);
   }
   &:active{
-    color: @button-add-font-color;
+    color: @button-font-color-blue;
     .linear-gradient(top, @active-button-add-startColor, @active-button-add-endColor);
   }
   &:before{
-    content: @button-add-content;
+    content: @button-font-color-blue;
     font-size: @button-add-content-font-size;
     font-weight: @button-add-content-font-weight;
+  }
+}
+.button-care{
+  .button-mini;
+  .linear-gradient(top, @lnitial-button-care-startColor, @lnitial-button-care-endColor);
+  &:hover{
+    color: @button-font-color;
+    .linear-gradient(top, @hover-button-care-startColor, @hover-button-care-endColor);
+  }
+  &:active{
+    color: @button-font-color;
+    .linear-gradient(top, @active-button-care-startColor, @active-button-care-endColor);
+  }
+}
+.button-careagain{
+  .button-mini;
+  color: @button-font-color-blue;
+  .linear-gradient(top, @lnitial-button-careagain-startColor, @lnitial-button-careagain-endColor);
+  &:hover{
+    color: @button-font-color-blue;
+    .linear-gradient(top, @hover-button-careagain-startColor, @hover-button-careagain-endColor);
+  }
+  &:active{
+    color: @button-font-color-blue;
+    .linear-gradient(top, @active-button-careagain-startColor, @active-button-careagain-endColor);
+  }
+}
+.button-hide{
+  .button-mini;
+  color: @button-font-color-dark;
+  .linear-gradient(top, @lnitial-button-hide-startColor, @lnitial-button-hide-endColor);
+  &:hover{
+    color: @button-font-color-dark;
+    .linear-gradient(top, @hover-button-hide-startColor, @hover-button-hide-endColor);
+  }
+  &:active{
+    color: @button-font-color-dark;
+    .linear-gradient(top, @active-button-hide-startColor, @active-button-hide-endColor);
   }
 }
