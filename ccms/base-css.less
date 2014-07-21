@@ -176,3 +176,35 @@ a:hover{
     .linear-gradient(top, @active-button-hide-startColor, @active-button-hide-endColor);
   }
 }
+
+// form
+// --input
+.input{
+  line-height: 25px;
+  border-radius: 0px;
+  font-size: @input-font-size;
+  color: @input-font-color;
+  width: @input-width;
+  height: @input-height;
+  padding: @input-padding;
+  border: @input-border;
+  background: @input-background;
+}
+.input-lnitial{
+  .input;
+  &:hover{
+    color: @input-hover-font-color;
+    border: @input-hover-border;
+  }
+}
+.input-error{
+  .input;
+  color: @input-error-font-color;
+  border: @input-error-border;
+}
+.input-disable{
+  .input;
+  background: @input-disable-background;
+  color: @input-disable-font-color;
+}
+// --smart search
